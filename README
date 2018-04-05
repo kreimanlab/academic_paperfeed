@@ -1,0 +1,61 @@
+# academic_paperfeed
+#------------------------------------------------------------------------------#
+                                    _                _      
+                 __ _  ___ __ _  __| | ___ _ __ ___ (_) ___ 
+                / _` |/ __/ _` |/ _` |/ _ \ '_ ` _ \| |/ __|
+               | (_| | (_| (_| | (_| |  __/ | | | | | | (__ 
+                \__,_|\___\__,_|\__,_|\___|_| |_| |_|_|\___|
+                                                                      
+
+                                             __               _ 
+              _ __   __ _ _ __   ___ _  _   / _| ___  ___  __| |
+             | '_ \ / _` | '_ \ / _ \ '__| | |_ / _ \/ _ \/ _` |
+             | |_) | (_| | |_) |  __/ |    |  _|  __/  __/ (_| |
+             | .__/ \__,_| .__/ \___|_|    |_|  \___|\___|\__,_|
+             |_|         |_|  
+
+#------------------------------------------------------------------------------#
+
+NAME
+        news - an RSS feed aggregator
+
+DESCRIPTION
+
+        Science moves fast, and if you don't have fast tools you won't be fast
+        enough!
+
+INSTALLATION
+
+        Put RSS urls in rss_urls, there are premade files in lists/
+
+        Install pycurl:
+
+            ./install_pycurl.sh
+
+        Use news:
+
+            python3 news.py
+
+        Loop news until ctrl-c:
+
+            ./news.sh
+
+        Defaults for news.py:
+
+            # color theme for 'dark' and 'light' terminals
+            THEME = 'dark'
+            # file containing RSS urls
+            RSS_URL_FILE = 'rss_urls'
+            # numer of items to show
+            N_SHOW_LINES = 1000
+            # maximum number of description characters to show
+            MAX_DESCRIPTION_LEN = 150
+            # if nonzero, will randomly shuffle news dates with std equal to this value
+            MAX_DAYS_HISTORY = 0.1
+
+
+AUTHOR
+
+        Author:     Jiarui Wang
+        Email:      mr.jiarui.wang@gmail.com
+
